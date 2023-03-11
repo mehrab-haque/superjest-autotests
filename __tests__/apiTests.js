@@ -13,10 +13,10 @@ describe("Add route test", () => {
         expect(res.statusCode).toEqual(200)
         expect(res.body.sum).toEqual(4)
     });
-    it('adding 2 + 3 should return 6', async () => {
+    it('adding 2 + 3 should return 5', async () => {
         const res = await request.get('/add?num1=2&num2=3')
         expect(res.statusCode).toEqual(200)
-        expect(res.body.sum).toEqual(6)
+        expect(res.body.sum).toEqual(5)
     });
 })
 
